@@ -14,17 +14,17 @@
 <body>      
  
 
-  <div class="container">
+  <div class="container">    
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="#">Swarm Project</a>
+      <a class="navbar-brand" href="#home">Swarm Project</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
         <span class="navbar-toggler-icon"></span>
       </button>
     
       <div class="collapse navbar-collapse" id="navbarColor01">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto">          
           <li class="nav-item active">
-            <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#total">Total Breakdown</a>
@@ -42,17 +42,34 @@
       </div>
     </nav>
     <section id="home">
-        <div class="jumbotron">
-            <h1 class="display-3">Hello!</h1>
-            <p class="lead">This is a simple page to demonstrate the impact of microplastic and microfiber pollution.</p>
-            <hr class="my-4">
-            <p>We've aggregated a large sampling of everyday common household items to visualize the average consumer.</p>            
-          </div>
+      <div class="jumbotron">
+        <h1 class="display-3">Hello,</h1>
+        <p class="lead">Have you heard of microfibers?</p>
+        <hr class="my-4">
+        <p>This is a simple page to demonstrate the impact of microplastic and microfiber pollution. We've aggregated a large sampling of everyday common household items to help visualize the average consumer's contribution.</p>            
+      </div>      
     </section>
+    <hr>
+    <section id="about">
+      <h1>About</h1>
+      <div class="q-block">
+        <p class="q-question">What is a microfiber?</p>
+        <p class="q-information">A microfiber is tiny fragment of the type of plastic used to make synthetic fabrics. These fibers are shed from synthetic clothing during a washing machine cycle. Because they are so small, microfibers aren’t all caught by wastewater treatment plants; instead, many are released into the environment.</p>
+      </div>
+      <div class="q-block">
+        <p class="q-question">How bad is the problem?</p>
+        <p class="q-information">Right now, it’s estimated that fibers are, by count, the single largest contributor to watershed plastic pollution in developed countries and account for a significant portion of plastic waste entering the ocean. Though we don’t yet know the extent to which microplastic pollution might affect humans, we do know that many animals within the aquatic food chain ingest these plastics and the toxics they absorb from the water around them,  which can transfer to their tissue and cause gut impaction, hormone disruption, and liver damage.</p>
+      </div>
+      <div class="q-block">
+        <p class="q-question">Which fabrics cause microfiber pollution?</p>
+        <p class="q-information">Microfibers can be released from any synthetic fabric, including polyester, rayon, and acrylics, or blends of these materials with natural materials.</p>
+      </div>
+    </section>
+    <hr>
     <section id="total">
         <h1>Total Breakdown</h1>
-        <p>This pie chart represents the total material breakdown of our household items.</p>
-        <div width="400px" height="400px">
+        <p>This pie chart represents the total material breakdown of a single persons average household items. The <span style="color:#4A89DC;">blue items</span> represent materials that do not produce microfibers, while the <span style="color:#E9573F;">red items</span> represent materials that release microfibers.</p>
+        <div width="400px" height="400px" style="margin-top:50px;">
           <canvas id="totalChart" ></canvas>
         </div>
     </section>  

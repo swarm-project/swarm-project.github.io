@@ -42,9 +42,9 @@ function UpdateTotalChart(totalChartData){
     let percentages = [];
     let materialLabels = [];
     let colors = [];
-    let cottonColor = '#E9573F';    
+    let cottonColor = '#4A89DC';    
     let cottonPercent = 0;
-    let syntheticColor = '#4A89DC';
+    let syntheticColor = '#E9573F';
     let syntheticPercent = 0;
     let shadeIncrement = 0.1;
 
@@ -140,7 +140,6 @@ function IsSynthetic(name){
     case "silk":
     case "white duck down":
     case "wool":
-    case "rayon":
       return false;
   }
   return true;
