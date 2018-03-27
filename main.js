@@ -1,4 +1,3 @@
-
 var data = [];
 
 // Get and format the data
@@ -28,14 +27,12 @@ $.ajax({
                 amount: line[1],
                 materials: materials                
             }
-
-            data.push(obj);
-        }
+            if(obj.name.length > 0 && obj.amount !== undefined){
+                data.push(obj);
+            }
+        }        
     }
 });
-
-
-
 
 
 
