@@ -1,1 +1,6 @@
-console.log("main.js entry point");
+$.ajax({
+    url: "/data.txt",
+    success: (data) => {
+        console.log(data);
+    }
+});
