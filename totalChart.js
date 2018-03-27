@@ -1,11 +1,14 @@
+let totalChartData = data;
+
+
 $(document).ready(() => {
     let ctx = document.getElementById('total').getContext('2d');
 
     let chartMaterials = {};
     let totalNumberOfItems = 0;
 
-    for(let i=0; i<data.length; i++){
-      let obj = data[i];
+    for(let i=0; i<totalChartData.length; i++){
+      let obj = totalChartData[i];
       let materials = obj.materials;
       totalNumberOfItems += Number.parseInt(obj.amount);
       if(isNaN(totalNumberOfItems)){
@@ -63,7 +66,7 @@ $(document).ready(() => {
       obj.percentage = ((obj.percentage * 100) |0) / 100;
 
       // Group into 'other'
-      if(obj.percentage < 1){
+      if(obj.percentage < 0.6){
         if(obj.synthetic){
           otherSynthetic.percentage += obj.percentage;
         }
@@ -116,7 +119,11 @@ $(document).ready(() => {
         labels: materialLabels
       },  
       // Configuration options go here
-      options: {}
+      options: {
+        legend: {
+          position: 'right'
+        }        
+      }
     });
 });
 
