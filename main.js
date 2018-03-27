@@ -1,5 +1,7 @@
 var data = [];
 
+var chartsToUpdate = [];
+
 // Get and format the data
 $.ajax({
     url: "https://swarm-project.github.io/data.txt",
@@ -33,8 +35,6 @@ $.ajax({
         }        
     }
 });
-
-
 
 
 

@@ -1,8 +1,10 @@
 let totalChartData = data;
 
 
-$(document).ready(() => {
-    let ctx = document.getElementById('total').getContext('2d');
+$(document).ready(UpdateTotalChart);
+  
+function UpdateTotalChart(){
+    let ctx = document.getElementById('totalChart').getContext('2d');
 
     let chartMaterials = {};
     let totalNumberOfItems = 0;
@@ -125,7 +127,7 @@ $(document).ready(() => {
         }        
       }
     });
-});
+};
 
 
 function IsSynthetic(name){
