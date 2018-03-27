@@ -1,9 +1,4 @@
-let totalChartData = data;
-
-
-$(document).ready(UpdateTotalChart);
-  
-function UpdateTotalChart(){
+function UpdateTotalChart(totalChartData){
     let ctx = document.getElementById('totalChart').getContext('2d');
 
     let chartMaterials = {};

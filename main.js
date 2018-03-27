@@ -32,11 +32,11 @@ $.ajax({
             if(obj.name.length > 0 && obj.amount !== undefined){
                 data.push(obj);
             }
-        }        
+        }
+        
+        UpdateTotalChart(data);
     }
 });
-
-
 
 
 
