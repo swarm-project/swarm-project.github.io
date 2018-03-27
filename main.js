@@ -17,7 +17,7 @@ $.ajax({
 
                     materials.push({
                         name: splitMat[1].trim().toProperCase(),
-                        percentage: splitMat[0]
+                        percentage: splitMat[0],                        
                     });
                 }
             }
@@ -25,7 +25,7 @@ $.ajax({
             let obj = {
                 name: line[0].toProperCase(),
                 amount: line[1],
-                materials: materials                
+                materials: materials
             }
             if(obj.name.length > 0 && obj.amount !== undefined){
                 data.push(obj);

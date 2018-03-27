@@ -40,8 +40,11 @@ $(document).ready(() => {
     // Now format it for chart.js
     let percentages = [];
     let materialLabels = [];
+    let colors = [];    
     for(let i=0; i<normalizedData.length; i++){
       let obj = normalizedData[i];
+      obj.percentage = ((obj.percentage * 100) |0) / 100;
+      
       percentages.push(obj.percentage);
       materialLabels.push(obj.name);
     }
