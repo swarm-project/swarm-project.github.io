@@ -30,10 +30,10 @@
             <a class="nav-link" href="#total">Breakdown</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Cellulosic</a>
+            <a class="nav-link" href="#natural">Natural</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Synthetic</a>
+            <a class="nav-link" href="#synthetic">Synthetic</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Footprint</a>
@@ -69,13 +69,25 @@
       </div>
     </section>
     <hr>
-    <section id="total">
+    <section id="total" class="section-spacer">
         <h1>Breakdown</h1>
         <p>This pie chart represents the total material breakdown of a single persons average household items. The <span style="color:#4A89DC;">blue items</span> represent materials that do not produce microfibers, while the <span style="color:#E9573F;">red items</span> represent materials that release microfibers. The information is based on data collected from our entire group.</p>
         <div width="400px" height="400px" style="margin-top:50px;">
           <canvas id="totalChart" ></canvas>
         </div>
-    </section>  
+        <div class="q-block">
+          <p class="q-question">What does this show?</p>
+          <p class="q-information">As you can see from the chart above, close to half of the materials in our households are made with synthetic fibers. These materials release close to 700,000 microfibers in a single wash! Unfortunately, most of these microfibers pass through our water filtration and make their way into the environment.</p>
+        </div>
+    </section>
+    <hr>
+    <section id="natural" class="section-spacer">
+      <h1>Natural Fibers</h1>
+      <p>Natural fibers are fibers made from the fibers of animals coats, cocoons of silkworms, and plants seeds, leaves, and stems.</p>
+      <div width="400px" height="400px" style="margin-top:50px;">
+          <canvas id="naturalChart" ></canvas>
+        </div>
+    </section>
   </div>
   
 
