@@ -30,13 +30,7 @@
             <a class="nav-link" href="#total">Breakdown</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#synthetic">Synthetic</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#natural">Natural</a>
-          </li>          
-          <li class="nav-item">
-            <a class="nav-link" href="#footprint">Footprint</a>
+            <a class="nav-link" href="#analysis">Analysis</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#solutions">Solutions</a>
@@ -74,47 +68,58 @@
     <hr>
     <section id="total" class="section-spacer">
         <h1>Breakdown</h1>
-        <p>This pie chart represents the total material breakdown of a single persons average household items. The <span style="color:#4A89DC;">blue items</span> represent materials that do not produce microfibers, while the <span style="color:#E9573F;">red items</span> represent materials that release microfibers. The information is based on data collected from our entire group.</p>
+        <div class="q-block">
+          <p class="q-question">SWARM Project Data Collection</p>
+          <p class="q-information">Sixty students in our group identified at least 10 clothing items they used in their household with a breakdown of the type of fabric or fiber that was in each clothing item. All group respondents identified the type of fabric or fiber for each item identifying the fiber type; Cellulosic, Synthetic, or a mix of fibers, and what percentage each fiber element represented for the clothing item.</p>
+        </div>
+        <p>This pie chart represents the total material breakdown of our average household items. The <span style="color:#4A89DC;">blue items</span> represent materials that do not produce microfibers, while the <span style="color:#E9573F;">red items</span> represent materials that release microfibers. The information is based on data collected from our entire group.</p>
         <div width="400px" height="400px" style="margin-top:50px;">
           <canvas id="totalChart" ></canvas>
         </div>
-        <div class="q-block">
+
+        <div class="q-block" style="padding-top:25px;">
           <p class="q-question">What does this show?</p>
-          <p class="q-information">As you can see from the chart above, close to half of the materials in our households are made with synthetic fibers. These materials release close to 700,000 microfibers in a single wash! Unfortunately, most of these microfibers pass through our water filtration and make their way into the environment.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <p class="q-information">Within our sample, <span style="color:#4A89DC;">56.80 %</span> of the fibers were made from materials that that do not produce microfibers.</p>
+            <ul>
+              <li>52.15 % was cotton</li>
+              <li>2.02 % was wool</li>
+              <li>0.87 % was silk</li>
+              <li>0.50 % was paper</li>
+              <li>0.95 % was made from other cellulosic fibers.</li>
+            </ul>
+          </div>
+          <div class="col-sm">
+            <p class="q-information">In contrast, <span style="color:#E9573F;">42.95 %</span> of the fibers were made from materials that release microfibers.</p>
+            <ul>
+              <li>26.88 % was polyester</li>
+              <li>3.83 % was acrylic</li>
+              <li>3.5 % was nylon</li>
+              <li>1.49 % was elastane</li>
+              <li>1.08 % was viscose</li>
+              <li>0.86 % was spandex</li>
+              <li>0.75 % was polyamide</li>
+              <li>3.94 % were made from other or unknown synthetic fibers</li>
+            </ul>
+          </div>
         </div>
     </section>
     <hr>
-    <section id="synthetic" class="section-spacer">
-      <h1>Synthetic</h1>
-      <p class="need-content">intro</p>      
-      <div width="400px" height="400px" style="margin-top:50px;">
-        <canvas id="syntheticChart" ></canvas>
-      </div>
-      <p class="need-content">takeaway</p>
+    <section id="analysis" class="section-spacer">
+      <h1>Analysis</h1>
+      <p>The fact that 56.80 % of the fibers in our group clothing sample were made from materials that do not produce microfibers is positive considering the research that indicates that washed clothing discharges harmful synthetic microfibers into wastewaters reaching our beaches, oceans, rivers and atmosphere. (see Alexander-White, 2016 p. 4; Smith, 2017, p. 2).</p>
+      <p>However, 42.95% of our sample included clothing fibers that were made from synthetic materials that include harmful synthetic material. In particular, 26.88 % of the synthetic fiber was polyester representing 62.66 % of the synthetic material reported by our group.</p>
+      <p>The high percentage of polyester in our sample is particularly problematic because Smith (2010) explains that clothing with polyester fiber[s] “can release 700,000 fibers in a single wash” (Smith, 2017, p. 2). What is a particular concern, according to Messinger (2016) is that synthetic microfibers can potentially poison the food chain (see Messinger, 2016).</p>
     </section>
-    <hr>
-    <section id="natural" class="section-spacer">
-      <h1>Natural</h1>
-      <p class="need-content">intro</p>      
-      <div width="400px" height="400px" style="margin-top:50px;">
-        <canvas id="naturalChart" ></canvas>
-      </div>
-      <p class="need-content">takeaway</p>
-    </section>
-    <hr>
-    <section id="footprint" class="section-spacer">
-      <h1>Footprint</h1>
-      <p class="need-content">intro</p>      
-      <div width="400px" height="400px" style="margin-top:50px;">
-        <canvas id="footprintChart" ></canvas>
-      </div>
-      <p class="need-content">takeaway</p>
-    </section>
+    
     <hr>
     <section id="solutions" class="section-spacer">
       <h1>Solutions</h1>
       <p>Given the fact that synthetic microfibers are a major source of atmospheric pollution, it is important that we become aware of this problem and think about how we can develop solutions which involve changing our personal habits and advocating for societal change.</p>
-      <p>Here are a few very simple things you can do to reduce your impact!</p>
+      <p>Our group proposes that we consider the following solutions to take action on microfiber pollution</p>
 
       <div class="row">
         <div class="col-sm">
