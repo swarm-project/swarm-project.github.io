@@ -15,7 +15,11 @@ body {
   color: #333;
 }
 
-.footer {
-  margin-top: 100px;
+.thanks {
+  margin: 100px 0;
   height: 100px;
+}
+
+footer {
+  background-color: #777;
 }
