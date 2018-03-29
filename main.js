@@ -44,6 +44,10 @@ $(document).ready(() => {
         $('html, body').animate({scrollTop: $('#about').position().top}, 'slow');
     });
 
+    $('#back2top').click(() => {
+        $('html, body').animate({scrollTop: 0});
+    })
+
     $('a[href*="#"]')
     // Remove links that don't actually link to anything
     .not('[href="#"]')

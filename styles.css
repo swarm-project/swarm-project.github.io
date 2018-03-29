@@ -47,3 +47,16 @@ footer a {
   padding-left: 25px;
   font-style: italic;
 }
+
+#back2top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  border-bottom: 2px solid;
+  cursor: pointer;
+  transition: border 0.2s ease-in;
+}
+
+#back2top:hover {
+  border-bottom: 5px solid;
+}
