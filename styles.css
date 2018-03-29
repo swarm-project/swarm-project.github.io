@@ -1,5 +1,6 @@
 .section-spacer {
-  padding-top: 40px;  
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 body {
   color: #555;
@@ -24,4 +25,25 @@ footer {
   background-color: #343a40;
   padding: 50px;
   color: #fff;
+}
+
+footer a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.references {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.references li {
+  padding: 10px;
+}
+
+.retrieved {
+  padding-left: 25px;
+  font-style: italic;
 }
